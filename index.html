@@ -4,7 +4,354 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome - Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
+    <title>Inlämningsuppgift HTML CSS Bootstrap</title>
+    <style>
+
+/* Color variables */
+        :root{
+            --bg-color: rgb(222, 222, 222);
+            --bg-color-dark: rgb(200, 200, 200);
+            --bg-color-darker: rgb(100, 88, 88);
+            --bg-color-light: rgb(255, 255, 255);
+    }
+
+/* Overall Styling */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+    }
+
+/* Body Styling */
+    body{
+        background-color: var(--bg-color);
+    }
+/* Container Styling */
+    col{
+        border-radius: 15px;
+        box-shadow: var(--bg-color-darker) 2px 2px;
+    }
+
+/* Navbar Styling */
+    .nav{
+          background-color: var(--bg-color-dark);
+          font-weight: bold;
+    }
+
+    .nav-link{
+          color: black;
+    }
+
+    .nav-link:hover{
+        color: black;
+        border: black;
+    }
+
+    nav-link:active{
+        color: black;
+        border: black;
+    }
+
+/* Cards Styling */
+    .card-body{
+          background-color: var(--bg-color-light);
+          border-radius: 10px;
+    }
+
+/* Buttons Styling */
+    .btn{
+        background-color: var(--bg-color);
+        border: var(--bg-color);
+        color: black;
+    }
+
+    .btn:hover{
+        background-color: black;
+        color: white;
+    }
+    </style>
   </head>
-  <body></body>
+
+  <body class="pt-5">
+<!-- Navbar -->
+    <ul class="nav nav-tabs justify-content-center fixed-top">
+      <li class="nav-item">
+        <a class="nav-link bi bi-search" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">New In</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Womens Clothing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Mens Clothing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link bi bi-person" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link bi bi-star" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link bi bi-bag"" href="#"></a>
+      </li>
+    </ul>
+
+<!-- Company Name -->
+    <h1 class="text-center my-3">Company & Co</h1>
+    <h3 class="my-4 text-center">New brand</h3>
+
+<!-- First Content -->
+    <div class="container text-center ">
+        <div class="col-lg-12">
+            
+            <div class="card" style="border-radius: 20px">
+                <img src="brand.jpg" alt="brand" style="border-radius: 20px">
+              <div class="card-body">
+                <h5 class="card-title">Brand in focus</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Exclusive online at Company & Co.</p>
+                <a href="#" class="btn btn-primary">Check out Brand</a>
+              </div>
+            </div>
+          </div>
+    </div>
+
+<!-- Second Content -->
+    <h3 class="my-4 text-center">Seasonal stuff</h3>
+    <div class="container text-center ">
+        <div class="row">
+            <div class="col-md-4">
+              <div class="card" style="border-radius: 20px">
+                <img src="seasonal.jpg" alt="seasonal" style="border-radius: 20px">
+                <div class="card-body">
+                  <h5 class="card-title">Winter News</h5>
+                  <p class="card-text">Winter is coming. Check out seasonal news to find new favorite.</p>
+                  <a href="#" class="btn btn-primary">New In</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="border-radius: 20px">
+                <img src="inspo.jpg" alt="seasonal" style="border-radius: 20px">
+                <div class="card-body">
+                  <h5 class="card-title">Get Inspired</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Inspiration</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="border-radius: 20px">
+                    <img src="christmas.jpg" alt="seasonal" style="border-radius: 20px">
+                  <div class="card-body">
+                    <h5 class="card-title">Christmas Gifts</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary ">Christmas Gifts</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+<!-- Third Content -->
+      <h3 class="my-4 text-center">News at Company & Co</h3>
+      <div class="container text-center" >
+        <div class="row">
+            <div class="col-lg-6">
+              <div class="card" style="border-radius: 20px">
+                <div class="card-body">
+                  <h5 class="card-title">News at Company & CO</h5>
+                  <p class="card-text">Winter is coming, this year again. Check out seasonal news to find new favorite.</p>
+                  <a href="#" class="btn btn-primary">New In</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card" style="border-radius: 20px">
+                <div class="card-body">
+                  <h5 class="card-title">Shop All</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Shop All</a>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+      </div>
+    </div>
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white mt-5">
+    <!-- Footer container - Grid -->
+    <div class="container p-4">
+      <!-- Section: Social media Links -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+  
+      <!-- Email - Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+  
+            <!--Email - Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" placeholder="Email address" />
+                <label class="form-label" for="form5Example21"  ></label>
+              </div>
+            </div>
+  
+            <!--Submit - Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+      </section>
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Company & CO - Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Company & Co</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">About Company & Co</a> 
+            </li>
+              <li>
+                <a href="#!" class="text-white">Köpvillkor</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Press</a>
+              </li>
+
+            </ul>
+          </div>
+  
+          <!--Customer Counselling - Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Customer Counselling</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Köpinformation</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">FAQs</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Contact Us</a>
+              </li>
+
+            </ul>
+          </div>
+  
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Company Information</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <p>Company & Co</p>
+              </li>
+              <li>
+                <p>Västra Finnbodavägen 4</p>
+              </li>
+              <li>
+                <p>131 30 Nacka</p>
+              </li>
+              <li>
+                <p>Mail: info@company.com</p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-white" href="#">Company & Co</a>
+    </div>
+  </footer>
+</body>
 </html>
