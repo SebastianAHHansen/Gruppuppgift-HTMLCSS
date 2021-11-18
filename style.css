@@ -1,7 +1,93 @@
+/* Color variables */
+:root {
+  --bg-color: rgb(222, 222, 222);
+  --bg-color-dark: rgb(200, 200, 200);
+  --bg-color-darker: rgb(100, 88, 88);
+  --bg-color-light: rgb(255, 255, 255);
+}
+
+/* Overall Styling */
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.card-text {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: none;
+}
+
+.card {
+  padding: 10px;
+}
+
+.card:hover {
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  -webkit-box-shadow: 2px 2px 3px;
+          box-shadow: 2px 2px 3px;
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: 400px;
+}
+
+/* Body Styling */
+body {
+  background-color: var(--bg-color);
+}
+
+/* Container Styling */
+col {
+  border-radius: 15px;
+  -webkit-box-shadow: var(--bg-color-darker) 2px 2px;
+          box-shadow: var(--bg-color-darker) 2px 2px;
+}
+
+/* Navbar Styling */
+.nav {
+  background-color: var(--bg-color-dark);
+  font-weight: bold;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: black;
+  border: black;
+}
+
+nav-link:active {
+  color: black;
+  border: black;
+}
+
+/* Cards Styling */
+.card-body {
+  background-color: var(--bg-color-light);
+  border-radius: 10px;
+}
+
+/* Buttons Styling */
+.btn {
+  background-color: var(--bg-color);
+  border: var(--bg-color);
+  color: black;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
