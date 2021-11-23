@@ -19,12 +19,12 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
@@ -32,6 +32,10 @@
     />
         <!-- CSS -->
         <link rel="stylesheet" href="style.css" />
+
+        <!-- JS -->
+        <link rel="stylesheet" href="app.js" />
+
     <title>Inlämningsuppgift HTML CSS Bootstrap</title>
   </head>
 
@@ -55,18 +59,27 @@
         <a class="nav-link" href="mens.html">Mens</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link bi bi-star" href="#"></a>
+        <a class="nav-link bi bi-heart" href="#"></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link bi bi-bag"" href="#"></a>
-      </li>
+
+      <div class="dropdown">
+        <button class="nav-link bi bi-bag" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">          
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Bobby
+              <img src="jacket1.jpg" alt="Jacka" style="width:35px;height:35px;">
+            </a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
     </ul>
 
 <!-- Company Name -->
     <h1 class="text-center my-3">Company & Co</h1>
     <h3 class="my-4 text-center">Mens Jackets</h3>
 
-
+<!-- Content - Mens -->
     <div class="container text-center ">
       <div class="row justify-content-center  ">
     <div class="card lg-3 my-3 mx-3" style="width: 18rem;">
@@ -76,11 +89,11 @@
         <h3 class="mt-2">Denim Jacket</h3>
         <h5 class="mt-1">$59</h5>
         <p class="card-text">100% Denim</p>
-        <a href="#" class="btn bi bi-star"></a>
+        <a class="btn1 bi bi-heart" id="heart"></a>
         <a href="#" class="btn btn-primary">Buy</a>
+
       </div>
     </div>
-
     <div class="card lg-3 my-3 mx-3" style="width: 18rem;">
       <img class="card-img-top" src="jacket1.jpg" alt="Blazer Jacket">
       <div class="card-body">
@@ -88,11 +101,10 @@
         <h3 class="mt-2">Blazer Jacket</h3>
         <h5 class="mt-1">$79</h5>
         <p class="card-text">100% Cotton</p>
-        <a href="#" class="btn bi bi-star"></a>
+        <a class="btn1 bi bi-heart" id="1heart"></a>
         <a href="#" class="btn btn-primary">Buy</a>
       </div>
     </div>
-
     <div class="card lg-3 my-3 mx-3" style="width: 18rem;">
       <img class="card-img-top" src="jacket3.jpg" alt="Windproof Jacket">
       <div class="card-body">
@@ -100,11 +112,10 @@
         <h3 class="mt-2">Windproof Jacket</h3>
         <h5 class="mt-1">$79</h5>
         <p class="card-text">100% Cotton</p>
-        <a href="#" class="btn bi bi-star"></a>
+        <a class="btn1 bi bi-heart" id="heart"></a>
         <a href="#" class="btn btn-primary">Buy</a>
       </div>
     </div>
-
     <div class="card lg-3 my-3 mx-3" style="width: 18rem;">
       <img class="card-img-top" src="jacket4.jpg" alt="Leather Jacket">
       <div class="card-body">
@@ -112,39 +123,38 @@
         <h3 class="mt-2">Leather Jacket</h3>
         <h5 class="mt-1">$89</h5>
       <p class="card-text">100% Cotton</p>
-      <a href="#" class="btn bi bi-star"></a>
+      <a class="btn1 bi bi-heart" id="heart"></a>
         <a href="#" class="btn btn-primary">Buy</a>
       </div>
     </div>
-    
 </div>
 </div>
 </div>
 
+<!-- Content - News -->
 <h3 class="my-4 text-center">New In</h3>
-
 <div class="container text-center ">
     <div class="row justify-content-center  ">
 
   <div class="card lg-3 my-3 mx-3" style="width: 18rem;">
-    <img class="card-img-top" src="jacket9.jpg" alt="Overshirt Jacket">
+    <img class="card-img-top" src="jacket9.jpg" alt="Field Jacket">
     <div class="card-body">
       <h5 class="mt-2">Filip</h5>
         <h3 class="mt-2">Field Jacket</h3>
         <h5 class="mt-1">$79</h5>
       <p class="card-text">100% Recycled</p>
-      <a href="#" class="btn bi bi-star"></a>
-      <a href="#" class="btn btn-primary">Buy</a>
+      <a class="btn1 bi bi bi-heart"id="heart"></a>
+      <a class="btn btn-primary">Buy</a>
     </div>
   </div>
   <div class="card lg-3 my-3 mx-3" style="width: 18rem;">
-    <img class="card-img-top" src="jacket8.jpg" alt="Puffer jacket">
+    <img class="card-img-top" src="jacket8.jpg" alt="Leather jacket">
     <div class="card-body">
       <h5 class="mt-2">Leonard</h5>
         <h3 class="mt-2">Leather Jacket</h3>
         <h5 class="mt-1">$99</h5>
       <p class="card-text">100% Vegan Leather</p>
-      <a href="#" class="btn bi bi-star"></a>
+      <a class="btn bi bi-heart" id="heart"></a>
       <a href="#" class="btn btn-primary">Buy</a>
     </div>
   </div>
@@ -152,6 +162,7 @@
     </div>
   </div>
 
+<!-- End Buttons  -->
 <div class="container text-center mt-3">
   <a href="index.html" class="btn btn-primary">Home</a>
   <a href="mens.html" class="btn btn-primary">Back To the Top</a>
@@ -242,7 +253,7 @@
               <a href="#!" class="text-white">About Company & Co</a> 
           </li>
             <li>
-              <a href="#!" class="text-white">Köpvillkor</a>
+              <a href="#!" class="text-white">Terms</a>
             </li>
             <li>
               <a href="#!" class="text-white">Press</a>
@@ -257,7 +268,7 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white">Köpinformation</a>
+              <a href="#!" class="text-white">Information</a>
             </li>
             <li>
               <a href="#!" class="text-white">FAQs</a>
@@ -302,5 +313,20 @@
     <a class="text-white" href="#">Company & Co</a>
   </div>
 </footer>
+
+<!-- Script for Heart button -->
+<script>
+  $("#heart").click(function() {
+  $(this).toggleClass('bi bi-heart');
+  $(this).toggleClass('bi bi-heart-fill');
+  });
+
+  $("#1heart").click(function() {
+  $(this).toggleClass('bi bi-heart');
+  $(this).toggleClass('bi bi-heart-fill');
+  });
+
+
+</script>
 </body>
 </html>

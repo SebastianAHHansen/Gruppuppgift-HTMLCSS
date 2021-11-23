@@ -20,11 +20,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
     <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
@@ -32,6 +27,10 @@
     />
         <!-- CSS -->
         <link rel="stylesheet" href="style.css" />
+
+        <!-- JS -->
+        <link rel="stylesheet" href="app.js" />
+
     <title>Inlämningsuppgift HTML CSS Bootstrap</title>
   </head>
 
@@ -54,7 +53,7 @@
         <a class="nav-link" href="mens.html">Mens</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link bi bi-star" href="#"></a>
+        <a class="nav-link bi bi-heart" href="#"></a>
       </li>
       <li class="nav-item">
         <a class="nav-link bi bi-bag"" href="#"></a>
@@ -65,7 +64,8 @@
     <h1 class="text-center my-3">Company & Co</h1>
     <h3 class="my-4 text-center">Womens Jackets</h3>
 
-    <div class="container text-center ">
+<!-- Content - Womens -->
+    <div class="container text-center">
         <div class="row justify-content-center  ">
     <div class="card lg-3 my-3 mx-3" style="width: 18rem;">
         <img class="card-img-top" src="wjacket.jpg" alt="Black Puffer Jacket">
@@ -75,7 +75,7 @@
             <h5 class="mt-1">$79</h5>
           <p class="card-text">100% Recycled</p>
 
-          <a href="#" class="btn bi bi-star"></a>
+          <a href="#" class="btn bi bi-heart"></a>
           <a href="#" class="btn btn-primary">Buy</a>
         </div>
       </div>
@@ -86,7 +86,7 @@
             <h3 class="mt-2">Overshirt Jacket</h3>
             <h5 class="mt-1">$49</h5>
           <p class="card-text">100% Denim</p>
-          <a href="#" class="btn bi bi-star"></a>
+          <a href="#" class="btn bi bi-heart"></a>
           <a href="#" class="btn btn-primary">Buy</a>
         </div>
       </div>
@@ -97,7 +97,7 @@
             <h3 class="mt-2">Puffer Jacket</h3>
             <h5 class="mt-1">$69</h5>
           <p class="card-text">100% Cotton</p>
-          <a href="#" class="btn bi bi-star"></a>
+          <a href="#" class="btn bi bi-heart"></a>
           <a href="#" class="btn btn-primary">Buy</a>
         </div>
       </div>
@@ -108,7 +108,7 @@
             <h3 class="mt-2">Baseball Jacket</h3>
             <h5 class="mt-1">$59</h5>
           <p class="card-text">100% Cotton</p>
-          <a href="#" class="btn bi bi-star"></a>
+          <a href="#" class="btn bi bi-heart"></a>
           <a href="#" class="btn btn-primary">Buy</a>
         </div>
       </div>
@@ -116,37 +116,36 @@
         </div>
       </div>
 
+<!-- Content - News -->
       <h3 class="my-4 text-center">New In</h3>
-
-<div class="container text-center ">
+<div class="container text-center">
     <div class="row justify-content-center  ">
 <div class="card lg-3 my-3 mx-3" style="width: 18rem;">
-    <img class="card-img-top" src="wjacket8.jpg" alt="Black Puffer Jacket">
+    <img class="card-img-top" src="wjacket8.jpg" alt="Overshirt Jacket">
     <div class="card-body">
       <h5 class="mt-2">Olga</h5>
         <h3 class="mt-2">Overshirt Jacket</h3>
         <h5 class="mt-1">$69</h5>
       <p class="card-text">100% Recycled</p>
-      <a href="#" class="btn bi bi-star"></a>
+      <a href="#" class="btn bi bi-heart"></a>
       <a href="#" class="btn btn-primary">Buy</a>
     </div>
   </div>
-
   <div class="card lg-3 my-3 mx-3" style="width: 18rem;">
-    <img class="card-img-top" src="wjacket10.jpg" alt="Baseball Jacket">
+    <img class="card-img-top" src="wjacket10.jpg" alt="Corduroy Jacket">
     <div class="card-body">
       <h5 class="mt-2">Caroline</h5>
         <h3 class="mt-2">Corduroy Jacket</h3>
         <h5 class="mt-1">$69</h5>
       <p class="card-text">100% Corduroy</p>
-      <a href="#" class="btn bi bi-star"></a>
+      <a href="#" class="btn bi bi-heart"></a>
       <a href="#" class="btn btn-primary">Buy</a>
     </div>
   </div>
-
     </div>
   </div>
 
+<!-- End Buttons  -->
       <div class="container text-center mt-3">
         <a href="index.html" class="btn btn-primary">Home</a>
         <a href="womens.html" class="btn btn-primary">Back To the Top</a>
@@ -236,7 +235,7 @@
                 <a href="#!" class="text-white">About Company & Co</a> 
             </li>
               <li>
-                <a href="#!" class="text-white">Köpvillkor</a>
+                <a href="#!" class="text-white">Terms</a>
               </li>
               <li>
                 <a href="#!" class="text-white">Press</a>
@@ -251,7 +250,7 @@
   
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#!" class="text-white">Köpinformation</a>
+                <a href="#!" class="text-white">Information</a>
               </li>
               <li>
                 <a href="#!" class="text-white">FAQs</a>
