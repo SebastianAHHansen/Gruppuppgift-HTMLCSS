@@ -29,9 +29,6 @@
   box-shadow: 2px 2px 3px;
 }
 
-.card-title {
-}
-
 .card-img-top {
   max-width: 100%;
   height: 400px;
@@ -75,9 +72,11 @@ nav-link:active {
 /* Buttons Styling */
 .btn {
   background-color: var(--bg-color);
+  box-shadow: 1px 1px 4px;
   border: var(--bg-color);
   color: black;
   margin-top: 10px;
+  margin-right: 5px;
 }
 
 .btn:hover {
