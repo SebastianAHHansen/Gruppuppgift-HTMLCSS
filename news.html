@@ -43,9 +43,6 @@
     <!-- Navbar -->
     <ul class="nav nav-tabs justify-content-center fixed-top">
       <li class="nav-item">
-        <a class="nav-link bi bi-search" href="#"></a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link bi bi-house" href="index.html"></a>
       </li>
       <li class="nav-item">
@@ -57,11 +54,51 @@
       <li class="nav-item">
         <a class="nav-link" href="mens.html">Mens</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link bi bi-heart" href="#"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link bi bi-bag" href="#"></a>
+      <div class="dropdown">
+        <button
+          class="nav-link bi bi-heart"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        ></button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button
+          class="nav-link bi bi-bag"
+          type="button"
+          id="dropdownMenuBag"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        ></button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuBag">
+          <a class="dropdown-item" href="#"
+            >Jacka 1
+            <img
+              src="jacket1.jpg"
+              alt="Jacka"
+              style="width: 42px; height: 42px"
+            />
+          </a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <li class="nav-item mt-2 mb-2">
+        <div class="search">
+          <input
+            type="text"
+            class="search-hover text-center"
+            placeholder="Search"
+          />
+        </div>
       </li>
     </ul>
 

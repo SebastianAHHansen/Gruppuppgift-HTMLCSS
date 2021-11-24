@@ -46,6 +46,7 @@
 
 /* Body Styling */
 body {
+  margin-top: 25px;
   background-color: var(--bg-color);
 }
 
@@ -120,8 +121,9 @@ nav-link:active {
 // Search container Styling
 .search {
   align-items: center;
-  margin-left: 40%;
+  justify-content: center;
   display: flex;
+  color: #fff;
 }
 
 // Search Hover
@@ -129,15 +131,12 @@ nav-link:active {
   background-color: var(--bg-color);
   border: 1px solid #ccc;
   outline: none;
-  background-size: 10px;
-  background-position: 10px;
   border-radius: 15px;
-  width: 50px;
-  height: 50px;
-  padding: 25px;
+  width: 150px;
+  height: 25px;
   transition: all 0.5s ease;
 }
 .search-hover:hover {
-  width: 300px;
-  padding-left: 50px;
+  width: 350px;
+  height: 30px;
 }
