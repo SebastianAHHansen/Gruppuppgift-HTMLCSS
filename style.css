@@ -5,6 +5,7 @@
   --bg-color-dark: rgb(200, 200, 200);
   --bg-color-darker: rgb(100, 88, 88);
   --bg-color-light: rgb(255, 255, 255);
+  --bg-color-button: rgb(232, 188, 161);
 }
 
 /* Overall Styling */
@@ -15,6 +16,11 @@
           box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+}
+
+.card-body {
+  background-color: var(--bg-color-light);
+  border-radius: 10px;
 }
 
 .card-text {
@@ -71,19 +77,27 @@ nav-link:active {
   border: black;
 }
 
-/* Cards Styling */
-.card-body {
-  background-color: var(--bg-color-light);
-  border-radius: 10px;
-}
-
 /* Buttons Styling */
 .btn {
-  background-color: var(--bg-color-dark);
+  background-color: var(--bg-color-button);
   border: var(--bg-color);
   color: black;
-  margin-top: 10px;
-  margin-right: 5px;
+}
+
+.btn:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.likeBtn {
+  color: red;
+  padding: 10px;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.likeBtn:hover {
+  color: red;
 }
 
 .btn1 {
@@ -99,13 +113,18 @@ nav-link:active {
   color: red;
 }
 
-.btn:hover {
-  background-color: black;
-  color: #fff;
-}
-
 .dropdown-menu {
   background-color: var(--bg-color);
+}
+
+.search {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .search-hover {

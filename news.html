@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- Font Awesome - Icons -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     />
+
+    <!-- Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -25,18 +30,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
     />
-        <!-- CSS -->
-        <link rel="stylesheet" href="style.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-        <!-- JS -->
-        <link rel="stylesheet" href="app.js" />
+    <!-- JS -->
+    <link rel="stylesheet" href="app.js" />
 
     <title>Inlämningsuppgift HTML CSS Bootstrap</title>
   </head>
 
   <body class="pt-5">
-
-<!-- Navbar -->
+    <!-- Navbar -->
     <ul class="nav nav-tabs justify-content-center fixed-top">
       <li class="nav-item">
         <a class="nav-link bi bi-search" href="#"></a>
@@ -57,213 +61,238 @@
         <a class="nav-link bi bi-heart" href="#"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link bi bi-bag"" href="#"></a>
+        <a class="nav-link bi bi-bag" href="#"></a>
       </li>
     </ul>
 
-<!-- Company Name -->
+    <!-- Company Name -->
     <h1 class="text-center my-3">Company & Co</h1>
     <h3 class="my-4 text-center">News</h3>
 
-<!-- Content - News -->
-    <div class="container text-center ">
-      <div class="row justify-content-center  ">
-  <div class="card lg-3 my-3 mx-3" style="width: 18rem;">
-      <img class="card-img-top" src="wjacket8.jpg" alt="Overshirt Jacket">
-      <div class="card-body">
-        <h5 class="mt-2">Olga</h5>
-          <h3 class="mt-2">Overshirt Jacket</h3>
-          <h5 class="mt-1">$69</h5>
-        <p class="card-text">100% Recycled</p>
-        <a href="#" class="btn bi bi-heart"></a>
-        <a href="#" class="btn btn-primary">Buy</a>
-      </div>
-    </div>
-    <div class="card lg-3 my-3 mx-3" style="width: 18rem;">
-      <img class="card-img-top" src="jacket9.jpg" alt="Field Jacket">
-      <div class="card-body">
-        <h5 class="mt-2">Filip</h5>
-          <h3 class="mt-2">Field Jacket</h3>
-          <h5 class="mt-1">$79</h5>
-        <p class="card-text">100% Recycled</p>
-        <a href="#" class="btn bi bi-heart"></a>
-        <a href="#" class="btn btn-primary">Buy</a>
-      </div>
-    </div>
-    <div class="card lg-3 my-3 mx-3" style="width: 18rem;">
-      <img class="card-img-top" src="jacket8.jpg" alt="Leather jacket">
-      <div class="card-body">
-        <h5 class="mt-2">Leonard</h5>
-          <h3 class="mt-2">Leather Jacket</h3>
-          <h5 class="mt-1">$99</h5>
-        <p class="card-text">100% Vegan Leather</p>
-        <a href="#" class="btn bi bi-heart"></a>
-        <a href="#" class="btn btn-primary">Buy</a>
-      </div>
-    </div>
-    <div class="card lg-3 my-3 mx-3" style="width: 18rem;">
-      <img class="card-img-top" src="wjacket10.jpg" alt="Corduroy Jacket">
-      <div class="card-body">
-        <h5 class="mt-2">Caroline</h5>
-          <h3 class="mt-2">Corduroy Jacket</h3>
-          <h5 class="mt-1">$69</h5>
-        <p class="card-text">100% Corduroy</p>
-        <a href="#" class="btn bi bi-heart"></a>
-        <a href="#" class="btn btn-primary">Buy</a>
-      </div>
-    </div>
+    <!-- Content - News -->
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="card lg-3 my-3 mx-3" style="width: 18rem">
+          <img class="card-img-top" src="wjacket8.jpg" alt="Overshirt Jacket" />
+          <div class="card-body">
+            <h5 class="mt-2">Olga</h5>
+            <h3 class="mt-2">Overshirt Jacket</h3>
+            <h5 class="mt-1">$69</h5>
+            <p class="card-text">100% Recycled</p>
+            <a href="#" class="btn bi bi-heart"></a>
+            <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+        </div>
+        <div class="card lg-3 my-3 mx-3" style="width: 18rem">
+          <img class="card-img-top" src="jacket9.jpg" alt="Field Jacket" />
+          <div class="card-body">
+            <h5 class="mt-2">Filip</h5>
+            <h3 class="mt-2">Field Jacket</h3>
+            <h5 class="mt-1">$79</h5>
+            <p class="card-text">100% Recycled</p>
+            <a href="#" class="btn bi bi-heart"></a>
+            <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+        </div>
+        <div class="card lg-3 my-3 mx-3" style="width: 18rem">
+          <img class="card-img-top" src="jacket8.jpg" alt="Leather jacket" />
+          <div class="card-body">
+            <h5 class="mt-2">Leonard</h5>
+            <h3 class="mt-2">Leather Jacket</h3>
+            <h5 class="mt-1">$99</h5>
+            <p class="card-text">100% Vegan Leather</p>
+            <a href="#" class="btn bi bi-heart"></a>
+            <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+        </div>
+        <div class="card lg-3 my-3 mx-3" style="width: 18rem">
+          <img class="card-img-top" src="wjacket10.jpg" alt="Corduroy Jacket" />
+          <div class="card-body">
+            <h5 class="mt-2">Caroline</h5>
+            <h3 class="mt-2">Corduroy Jacket</h3>
+            <h5 class="mt-1">$69</h5>
+            <p class="card-text">100% Corduroy</p>
+            <a href="#" class="btn bi bi-heart"></a>
+            <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+        </div>
       </div>
     </div>
 
-<!-- End Buttons  -->
+    <!-- End Buttons  -->
     <div class="container text-center mt-3">
       <a href="index.html" class="btn btn-primary">Home</a>
       <a href="news.html" class="btn btn-primary">Back To the Top</a>
       <a href="all.html" class="btn btn-primary">See All Jackets</a>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white mt-5">
+      <!-- Footer container - Grid -->
+      <div class="container p-4">
+        <!-- Section: Social media Links -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://facebook.com"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
 
-      </div>
-<!-- Footer -->
-<footer class="bg-dark text-center text-white mt-5">
-    <!-- Footer container - Grid -->
-    <div class="container p-4">
-      <!-- Section: Social media Links -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com" target="_blank" role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-  
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com" target="_blank" role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
-  
-        <!-- Google -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://google.com" target="_blank" role="button"
-          ><i class="fab fa-google"></i
-        ></a>
-  
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com" target="_blank" role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-  
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://linkedin.com" target="_blank" role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-  
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com" target="_blank" role="button"
-          ><i class="fab fa-github"></i
-        ></a>
-      </section>
-  
-      <!-- Email - Section: Form -->
-      <section class="">
-        <form action="">
-          <!--Grid row-->
-          <div class="row d-flex justify-content-center">
-            <!--Grid column-->
-            <div class="col-auto">
-              <p class="pt-2">
-                <strong>Sign up for our newsletter</strong>
-              </p>
-            </div>
-  
-            <!--Email - Grid column-->
-            <div class="col-md-5 col-12">
-              <!-- Email input -->
-              <div class="form-outline form-white mb-4">
-                <input type="email" id="form5Example21" class="form-control" placeholder="Email address" />
-                <label class="form-label" for="form5Example21"  ></label>
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://twitter.com"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://google.com"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://instagram.com"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://linkedin.com"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://github.com"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+
+        <!-- Email - Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+
+              <!--Email - Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id="form5Example21"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                  <label class="form-label" for="form5Example21"></label>
+                </div>
+              </div>
+
+              <!--Submit - Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
               </div>
             </div>
-  
-            <!--Submit - Grid column-->
-            <div class="col-auto">
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-outline-light mb-4">
-                Subscribe
-              </button>
+          </form>
+        </section>
+
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Company & CO - Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Company & Co</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">About Company & Co</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Terms</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Press</a>
+                </li>
+              </ul>
             </div>
-          </div>
-        </form>
-      </section>
-      </section>
-  
-      <!-- Section: Links -->
-      <section class="">
-        <!--Grid row-->
-        <div class="row">
-          <!--Company & CO - Grid column-->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Company & Co</h5>
-  
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">About Company & Co</a> 
-            </li>
-              <li>
-                <a href="#!" class="text-white">Terms</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Press</a>
-              </li>
 
-            </ul>
-          </div>
-  
-          <!--Customer Counselling - Grid column-->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Customer Counselling</h5>
-  
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Information</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">FAQs</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Contact Us</a>
-              </li>
+            <!--Customer Counselling - Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Customer Counselling</h5>
 
-            </ul>
-          </div>
-  
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Company Information</h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Information</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">FAQs</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Contact Us</a>
+                </li>
+              </ul>
+            </div>
 
-            <ul class="list-unstyled mb-0">
-              <li>
-                <p>Company & Co</p>
-              </li>
-              <li>
-                <p>Västra Finnbodavägen 4</p>
-              </li>
-              <li>
-                <p>131 30 Nacka</p>
-              </li>
-              <li>
-                <p>Mail: info@company.com</p>
-              </li>
-            </ul>
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Company Information</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <p>Company & Co</p>
+                </li>
+                <li>
+                  <p>Västra Finnbodavägen 4</p>
+                </li>
+                <li>
+                  <p>131 30 Nacka</p>
+                </li>
+                <li>
+                  <p>Mail: info@company.com</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
           </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </section>
-    </div>
-  
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2021 Copyright:
-      <a class="text-white" href="#">Company & Co</a>
-    </div>
-  </footer>
-</body>
+          <!--Grid row-->
+        </section>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-white" href="#">Company & Co</a>
+      </div>
+    </footer>
+  </body>
 </html>
