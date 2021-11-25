@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome - Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+
+    <!-- Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JS -->
+    <link rel="stylesheet" href="app.js" />
+    <title>Inlämningsuppgift HTML CSS Bootstrap</title>
+</head>
+<body class="pt-5"></body>
+    <!-- Navbar -->
+    <ul class="nav nav-tabs justify-content-center fixed-top">
+        <!-- Navlink Home -->
+        <li class="nav-item">
+          <a class="nav-link bi bi-house" href="index.html"></a>
+        </li>
+        <!-- Navlink News -->
+        <div class="dropdown">
+          <button
+            class="nav-link"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+          >
+            <b> NEWS</b>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="news.html"><b>All New Jackets</b></a>
+            <li><hr class="dropdown-divider" /></li>
+            <a class="dropdown-item" href="news.html"
+              ><b>Caroline</b> - Corduroy Jacket</a
+            >
+            <a class="dropdown-item" href="news.html"
+              ><b>Filip</b> - Field Jacket</a
+            >
+            <a class="dropdown-item" href="news.html"
+              ><b>Leonard</b> - Leather Jacket</a
+            >
+            <a class="dropdown-item" href="news.html"
+              ><b>Olga</b> - Overshirt Jacket</a
+            >
+          </div>
+        </div>
+        <!-- Navlink Womens -->
+        <div class="dropdown">
+          <button
+            class="nav-link"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+          >
+            <b> WOMENS</b>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="womens.html"
+              ><b>All Jackets Women</b></a
+            >
+            <li><hr class="dropdown-divider" /></li>
+            <a class="dropdown-item" href="womens.html"
+              ><b>Alice</b> - Puffer Jacket</a
+            >
+            <a class="dropdown-item" href="womens.html"
+              ><b>Caroline</b> - Corduruy Jacket</a
+            >
+            <a class="dropdown-item" href="womens.html"
+              ><b>Julia</b> - Puffer Jacket</a
+            >
+            <a class="dropdown-item" href="womens.html"
+              ><b>Olga</b> - Overshirt Jacket</a
+            >
+            <a class="dropdown-item" href="womens.html"
+              ><b>Olivia</b> - Overshirt Jacket</a
+            >
+            <a class="dropdown-item" href="womens.html"
+              ><b>Sarah</b> - Baseball Jacket</a
+            >
+          </div>
+        </div>
+        <!-- Navlink Mens -->
+        <div class="dropdown">
+          <button
+            class="nav-link"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+          >
+            <b> MENS</b>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="mens.html"><b> All Jackets Men</b> </a>
+            <li><hr class="dropdown-divider" /></li>
+            <a class="dropdown-item" href="mens.html"
+              ><b>Allen</b> - Denim Jacket</a
+            >
+            <a class="dropdown-item" href="mens.html"
+              ><b>Bobby</b> - Blazer Jacket</a
+            >
+            <a class="dropdown-item" href="mens.html"
+              ><b>Filip</b> - Field Jacket</a
+            >
+            <a class="dropdown-item" href="mens.html"
+              ><b>Leo</b> - Leather Jacket</a
+            >
+            <a class="dropdown-item" href="mens.html"
+              ><b>Leonard</b> - Leather Jacket</a
+            >
+            <a class="dropdown-item" href="mens.html"
+              ><b>Wincent</b> - Windproof Jacket</a
+            >
+          </div>
+        </div>
+        <!-- Navlink Heart -->
+        <li class="nav-item">
+          <a class="nav-link bi bi-heart" href="#"></a>
+        </li>
+        <!-- Navlink Cart -->
+        <div class="dropdown">
+          <button
+            class="nav-link bi bi-bag"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          ></button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#"
+              >Bobby
+              <img
+                src="jacket1.jpg"
+                alt="Jacka"
+                style="width: 35px; height: 35px"
+              />
+            </a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <!-- Navlink Search -->
+        <li class="nav-item mt-2 mb-2">
+          <div class="search">
+            <input
+              type="text"
+              class="search-hover text-center"
+              placeholder="Search"
+            />
+          </div>
+        </li>
+    </ul>
+        <!-- Company Name -->
+        <h3 class="my-4 text-center">Company & CO</h3>
+        <!-- Contact Content -->
+        <div class="container">
+        <div class="row">
+            <!-- COMPANY & CO -->
+            <div class="col-lg-6">
+            <div class="card my-2" style="border-radius: 20px">
+              <div class="card-body text-center">
+                <h5 class="card-title">COMPANY & CO</h5>
+                <hr class="divider">
+            </div>
+            <ul>
+                <strong>About Company & CO</strong> 
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, repellat.
+                </p>
+            </ul>
+            <ul>
+                <strong>Terms</strong>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, repellat.
+            </ul>
+            <ul>
+                <strong>Press</strong>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, repellat.
+            </ul>
+            </div>
+            </div>
+            <!-- CUSTOMER COUNSELLING -->
+            <div class="col-lg-6">
+            <div class="card my-2" style="border-radius: 20px">
+              <div class="card-body text-center">
+                <h5 class="card-title">CUSTOMER COUNSELLING</h5>
+                <hr class="divider">
+              </div>
+              <ul>
+                <strong>Information</strong> 
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, repellat.
+                </p>
+            </ul>
+            <ul>
+                <strong>FAQ</strong>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, repellat.
+            </ul>
+            <ul>
+                <strong>Contact Us</strong>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, repellat.
+            </ul>
+            </div>
+            </div>
+            <!-- COMPANY INFORMATION -->
+            <div class="col-lg-6">
+            <div class="card my-2" style="border-radius: 20px">
+              <div class="card-body text-center">
+                <h5 class="card-title">COMPANY INFORMATION</h5>
+                <hr class="divider">
+                </div>
+                <ul>
+                <strong>Company & CO</strong> 
+                </ul>
+            <ul>
+                <strong>VÄSTRA FINNBODAVÄGEN 4</strong> 
+            </ul>
+            <ul>
+                <strong>131 30 NACKA</strong> 
+            </ul>
+            <ul>
+                <strong>MAIL:</strong>  INFO@COMPANY.COM
+            </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white mt-5">
+        <!-- Footer container - Grid -->
+        <div class="container p-4">
+          <!-- Section: Social media Links -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://facebook.com"
+              target="_blank"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <!-- Twitter -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://twitter.com"
+              target="_blank"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <!-- Google -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://google.com"
+              target="_blank"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+            <!-- Instagram -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://instagram.com"
+              target="_blank"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <!-- Linkedin -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://linkedin.com"
+              target="_blank"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </section>
+  
+          <!-- Email - Section: Form -->
+          <section class="">
+            <form action="submit">
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                <div class="col-auto">
+                  <p class="pt-2">
+                    <strong>Sign up for our newsletter</strong>
+                  </p>
+                </div>
+  
+                <!--Email - Grid column-->
+                <div class="col-md-5 col-12">
+                  <!-- Email input -->
+                  <div class="form-outline form-white mb-4">
+                    <input
+                      type="email"
+                      id="form"
+                      class="form-control"
+                      placeholder="Email address"
+                    />
+                    <label class="form-label" for="form"></label>
+                  </div>
+                </div>
+  
+                <!--Submit - Grid column-->
+                <div class="col-auto">
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-outline-light mb-4">
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </form>
+          </section>
+  
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!--Company & CO - Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Company & Co</h5>
+  
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-white">About Company & Co</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white">Terms</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white">Press</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <!--Customer Counselling - Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Customer Counselling</h5>
+  
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-white">Information</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Company Information</h5>
+  
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <p>Company & Co</p>
+                  </li>
+                  <li>
+                    <p>Västra Finnbodavägen 4</p>
+                  </li>
+                  <li>
+                    <p>131 30 Nacka</p>
+                  </li>
+                  <li>
+                    <p>Mail: info@company.com</p>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+  
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </section>
+        </div>
+  
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2021 Copyright:
+          <a class="text-white" href="#">Company & Co</a>
+        </div>
+    </footer>
+</body>
+</html>

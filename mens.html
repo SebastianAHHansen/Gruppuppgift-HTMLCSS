@@ -42,22 +42,110 @@
   <body class="pt-5">
     <!-- Navbar -->
     <ul class="nav nav-tabs justify-content-center fixed-top">
+      <!-- Navlink Home -->
       <li class="nav-item">
         <a class="nav-link bi bi-house" href="index.html"></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="news.html">News</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="womens.html">Womens</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="mens.html">Mens</a>
-      </li>
+      <!-- Navlink News -->
+      <div class="dropdown">
+        <button
+          class="nav-link"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+        >
+          <b> NEWS</b>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="news.html"><b>All New Jackets</b></a>
+          <li><hr class="dropdown-divider" /></li>
+          <a class="dropdown-item" href="news.html"
+            ><b>Caroline</b> - Corduroy Jacket</a
+          >
+          <a class="dropdown-item" href="news.html"
+            ><b>Filip</b> - Field Jacket</a
+          >
+          <a class="dropdown-item" href="news.html"
+            ><b>Leonard</b> - Leather Jacket</a
+          >
+          <a class="dropdown-item" href="news.html"
+            ><b>Olga</b> - Overshirt Jacket</a
+          >
+        </div>
+      </div>
+      <!-- Navlink Womens -->
+      <div class="dropdown">
+        <button
+          class="nav-link"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+        >
+          <b> WOMENS</b>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="womens.html"
+            ><b>All Jackets Women</b></a
+          >
+          <li><hr class="dropdown-divider" /></li>
+          <a class="dropdown-item" href="womens.html"
+            ><b>Alice</b> - Puffer Jacket</a
+          >
+          <a class="dropdown-item" href="womens.html"
+            ><b>Caroline</b> - Corduruy Jacket</a
+          >
+          <a class="dropdown-item" href="womens.html"
+            ><b>Julia</b> - Puffer Jacket</a
+          >
+          <a class="dropdown-item" href="womens.html"
+            ><b>Olga</b> - Overshirt Jacket</a
+          >
+          <a class="dropdown-item" href="womens.html"
+            ><b>Olivia</b> - Overshirt Jacket</a
+          >
+          <a class="dropdown-item" href="womens.html"
+            ><b>Sarah</b> - Baseball Jacket</a
+          >
+        </div>
+      </div>
+      <!-- Navlink Mens -->
+      <div class="dropdown">
+        <button
+          class="nav-link"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+        >
+          <b> MENS</b>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="mens.html"><b> All Jackets Men</b> </a>
+          <li><hr class="dropdown-divider" /></li>
+          <a class="dropdown-item" href="mens.html"
+            ><b>Allen</b> - Denim Jacket</a
+          >
+          <a class="dropdown-item" href="mens.html"
+            ><b>Bobby</b> - Blazer Jacket</a
+          >
+          <a class="dropdown-item" href="mens.html"
+            ><b>Filip</b> - Field Jacket</a
+          >
+          <a class="dropdown-item" href="mens.html"
+            ><b>Leo</b> - Leather Jacket</a
+          >
+          <a class="dropdown-item" href="mens.html"
+            ><b>Leonard</b> - Leather Jacket</a
+          >
+          <a class="dropdown-item" href="mens.html"
+            ><b>Wincent</b> - Windproof Jacket</a
+          >
+        </div>
+      </div>
+      <!-- Navlink Heart -->
       <li class="nav-item">
         <a class="nav-link bi bi-heart" href="#"></a>
       </li>
-
+      <!-- Navlink Cart -->
       <div class="dropdown">
         <button
           class="nav-link bi bi-bag"
@@ -80,6 +168,7 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </div>
+      <!-- Navlink Search -->
       <li class="nav-item mt-2 mb-2">
         <div class="search">
           <input
@@ -93,9 +182,9 @@
 
     <!-- Company Name -->
     <h1 class="text-center my-3">Company & Co</h1>
-    <h3 class="my-4 text-center">Mens Jackets</h3>
 
     <!-- Content - Mens -->
+    <h3 class="my-4 text-center">Mens Jackets</h3>
     <div class="container text-center">
       <div class="row justify-content-center">
         <div class="card lg-3 my-3 mx-3" style="width: 18rem">
@@ -174,7 +263,7 @@
       </div>
     </div>
 
-    <!-- End Buttons  -->
+    <!-- End Buttons -->
     <div class="container text-center mt-3">
       <a href="index.html" class="btn btn-primary">Home</a>
       <a href="mens.html" class="btn btn-primary">Back To the Top</a>
@@ -231,15 +320,6 @@
             role="button"
             ><i class="fab fa-linkedin-in"></i
           ></a>
-
-          <!-- Github -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="https://github.com"
-            target="_blank"
-            role="button"
-            ><i class="fab fa-github"></i
-          ></a>
         </section>
 
         <!-- Email - Section: Form -->
@@ -289,7 +369,9 @@
 
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="#!" class="text-white">About Company & Co</a>
+                  <a href="contact.html" class="text-white"
+                    >About Company & Co</a
+                  >
                 </li>
                 <li>
                   <a href="#!" class="text-white">Terms</a>
@@ -303,7 +385,6 @@
             <!--Customer Counselling - Grid column-->
             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase">Customer Counselling</h5>
-
               <ul class="list-unstyled mb-0">
                 <li>
                   <a href="#!" class="text-white">Information</a>
@@ -336,9 +417,6 @@
                 </li>
               </ul>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
           </div>
           <!--Grid row-->
         </section>
@@ -351,7 +429,7 @@
       </div>
     </footer>
 
-    // Script for Heart button
+    <!-- Script for Heart button -->
     <script>
       $('#heart').click(function () {
         $(this).toggleClass('bi bi-heart');

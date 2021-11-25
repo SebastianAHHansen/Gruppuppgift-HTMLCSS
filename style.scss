@@ -21,8 +21,7 @@
 
 // Cards Styling
 .card-body {
-  background-color: var(--bg-color-light);
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .card-text {
@@ -32,6 +31,7 @@
 
 .card {
   padding: 10px;
+  border-radius: 15px;
 }
 
 .card:hover {
@@ -81,6 +81,7 @@ nav-link:active {
   background-color: var(--bg-color-button);
   border: var(--bg-color);
   color: black;
+  border-radius: 10px;
 }
 
 .btn:hover {
