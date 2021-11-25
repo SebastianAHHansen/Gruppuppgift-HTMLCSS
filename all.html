@@ -36,74 +36,62 @@
     <!-- JS -->
     <link rel="stylesheet" href="app.js" />
 
-    <title>Inlämningsuppgift HTML CSS Bootstrap</title>
+    <title>Mens Jackets - Company & CO</title>
   </head>
   <body class="pt-5">
     <!-- Navbar -->
-    <ul class="nav nav-tabs justify-content-center fixed-top">
-      <li class="nav-item">
-        <a class="nav-link bi bi-house" href="index.html"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="news.html">News</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="womens.html">Womens</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="mens.html">Mens</a>
-      </li>
-      <div class="dropdown">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Company & CO</a>
         <button
-          class="nav-link bi bi-heart"
+          class="navbar-toggler"
           type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
+          data-mdb-toggle="collapse"
           aria-expanded="false"
-        ></button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button
-          class="nav-link bi bi-bag"
-          type="button"
-          id="dropdownMenuBag"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        ></button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuBag">
-          <a class="dropdown-item" href="#"
-            >Jacka 1
-            <img
-              src="jacket1.jpg"
-              alt="Jacka"
-              style="width: 42px; height: 42px"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="all.html">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mens.html">Mens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="womens.html">Womens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi bi-bag"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi bi-heart"></a>
+            </li>
+          </ul>
+          <form class="d-flex input-group w-auto">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search Jackets"
+              aria-label="Search"
             />
-          </a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+            <button class="btn" type="button">Search</button>
+          </form>
         </div>
       </div>
-      <li class="nav-item mt-2 mb-2">
-        <div class="search">
-          <input
-            type="text"
-            class="search-hover text-center"
-            placeholder="Search"
-          />
-        </div>
-      </li>
-    </ul>
+    </nav>
+    <!-- Navbar -->
+
     <!-- Company Name -->
     <h1 class="text-center my-3">Company & Co</h1>
     <h3 class="my-4 text-center">All Our Jackets</h3>
-    <h3 class="my-4 text-center">Womens</h3>
 
     <!-- Content - Women -->
     <div class="container text-center">
@@ -160,7 +148,6 @@
     </div>
 
     <!-- Content - Mens -->
-    <h3 class="my-4 text-center">Mens</h3>
     <div class="container text-center">
       <div class="row justify-content-center">
         <div class="card lg-3 my-3 mx-3" style="width: 18rem">
@@ -211,7 +198,6 @@
     </div>
 
     <!-- Content - News -->
-    <h3 class="my-4 text-center">New In</h3>
     <div class="container text-center">
       <div class="row justify-content-center">
         <div class="card lg-3 my-3 mx-3" style="width: 18rem">
@@ -263,7 +249,6 @@
 
     <!-- End Buttons  -->
     <div class="container text-center mt-3">
-      <a href="index.html" class="btn btn-primary">Home</a>
       <a href="all.html" class="btn btn-primary">Back To the Top</a>
     </div>
 
@@ -271,7 +256,7 @@
     <footer class="bg-dark text-center text-white mt-5">
       <!-- Footer container - Grid -->
       <div class="container p-4">
-        <!-- Section: Social media Links -->
+        <!-- Social media Links -->
         <section class="mb-4">
           <!-- Facebook -->
           <a
@@ -317,26 +302,17 @@
             role="button"
             ><i class="fab fa-linkedin-in"></i
           ></a>
-
-          <!-- Github -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="https://github.com"
-            target="_blank"
-            role="button"
-            ><i class="fab fa-github"></i
-          ></a>
         </section>
 
-        <!-- Email - Section: Form -->
-        <section class="">
-          <form action="">
+        <!-- Email - Submit -->
+        <section class="form">
+          <form action="submit">
             <!--Grid row-->
             <div class="row d-flex justify-content-center">
               <!--Grid column-->
               <div class="col-auto">
                 <p class="pt-2">
-                  <strong>Sign up for our newsletter</strong>
+                  <strong>SIGN UP FOR OUT NEWSLETTER</strong>
                 </p>
               </div>
 
@@ -346,11 +322,11 @@
                 <div class="form-outline form-white mb-4">
                   <input
                     type="email"
-                    id="form5Example21"
+                    id="form"
                     class="form-control"
                     placeholder="Email address"
                   />
-                  <label class="form-label" for="form5Example21"></label>
+                  <label class="form-label" for="form"></label>
                 </div>
               </div>
 
@@ -366,47 +342,43 @@
         </section>
 
         <!-- Section: Links -->
-        <section class="">
-          <!--Grid row-->
+        <section class="links">
           <div class="row">
-            <!--Company & CO - Grid column-->
+            <!-- Company & CO - Grid column-->
             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase">Company & Co</h5>
-
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="#!" class="text-white">About Company & Co</a>
+                  <a href="contact.html" class="text-white"
+                    >About Company & Co</a
+                  >
                 </li>
                 <li>
-                  <a href="#!" class="text-white">Terms</a>
+                  <a href="contact.html" class="text-white">Terms</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-white">Press</a>
+                  <a href="contact.html" class="text-white">Press</a>
                 </li>
               </ul>
             </div>
-
-            <!--Customer Counselling - Grid column-->
+            <!-- Customer Counselling - Grid column-->
             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase">Customer Counselling</h5>
-
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="#!" class="text-white">Information</a>
+                  <a href="contact.html" class="text-white">Information</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-white">FAQs</a>
+                  <a href="contact.html" class="text-white">FAQs</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-white">Contact Us</a>
+                  <a href="contact.html" class="text-white">Contact Us</a>
                 </li>
               </ul>
             </div>
-
-            <!--Grid column-->
+            <!-- Company Information - Grid column-->
             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase">Company Information</h5>
-
               <ul class="list-unstyled mb-0">
                 <li>
                   <p>Company & Co</p>
@@ -422,11 +394,7 @@
                 </li>
               </ul>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
           </div>
-          <!--Grid row-->
         </section>
       </div>
 
@@ -436,5 +404,6 @@
         <a class="text-white" href="#">Company & Co</a>
       </div>
     </footer>
+    <!-- Footer -->
   </body>
 </html>

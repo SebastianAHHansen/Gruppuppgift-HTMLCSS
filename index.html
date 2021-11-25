@@ -36,85 +36,109 @@
     <!-- JS -->
     <link rel="stylesheet" href="app.js" />
 
-    <title>Inlämningsuppgift HTML CSS Bootstrap</title>
+    <title>Homepage - Company & CO</title>
   </head>
 
   <body class="pt-5">
     <!-- Navbar -->
-    <ul class="nav nav-tabs justify-content-center fixed-top">
-      <!-- Logo - Clickable -->
-      <li class="nav-item">
-        <div class="logo">
-          <a class="nav-link" href="index.html">Company & CO</a>
-        </div>
-      </li>
-
-      <!-- House Symbol
-  <li class="nav-item">
-    <a class="nav-link bi bi-house" href="index.html"></a>
-  </li> -->
-
-      <li class="nav-item">
-        <a class="nav-link" href="news.html">News</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="womens.html">Womens</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="mens.html">Mens</a>
-      </li>
-      <div class="dropdown">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <!-- Logo Brand - Navbar -->
+        <a class="navbar-brand" href="index.html">Company & CO</a>
+        <!-- Collapse Meny - Navbar -->
         <button
-          class="nav-link bi bi-heart"
+          class="navbar-toggler"
           type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
+          data-mdb-toggle="collapse"
           aria-expanded="false"
-        ></button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button
-          class="nav-link bi bi-bag"
-          type="button"
-          id="dropdownMenuBag"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        ></button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuBag">
-          <a class="dropdown-item" href="#"
-            >Jacka 1
-            <img
-              src="jacket1.jpg"
-              alt="Jacka"
-              style="width: 42px; height: 42px"
+        >
+          <!-- Icon Menu -->
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Navlinks -->
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="all.html">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mens.html">Mens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="womens.html">Womens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi bi-bag"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi bi-heart"></a>
+            </li>
+          </ul>
+          <form class="d-flex input-group w-auto">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search Jackets"
+              aria-label="Search"
             />
-          </a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+            <button class="btn" type="button">Search</button>
+          </form>
         </div>
       </div>
-      <li class="nav-item mt-2 mb-2">
-        <div class="search">
-          <input
-            type="text"
-            class="search-hover text-center"
-            id="searchBar"
-            placeholder="Search"
-          />
-        </div>
-      </li>
-    </ul>
+    </nav>
+    <!-- Navbar -->
 
     <!-- Company Name -->
     <h1 class="text-center my-3">Company & Co</h1>
     <h3 class="my-4 text-center">Jackets for Men and Women</h3>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner" style="border-radius: 20px">
+        <div class="carousel-item active d-flex justify-content-center">
+          <img
+            class="carousel-img d-block w-100%"
+            src="carousel black.jpg"
+            alt="First slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <img
+              class="carousel-img d-block w-100%"
+              src="carousel medium.jpg"
+              alt="Second slide"
+            />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <img
+              class="carousel-img d-block w-100%"
+              src="small.jpg"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $('.carousel').carousel({
+        interval: 2000,
+      });
+    </script>
+    <!-- Carousel -->
 
     <!-- First Content -->
     <div class="container text-center">
@@ -132,15 +156,16 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
                 Exclusive online at Company & Co.
               </p>
-              <a href="all.html" class="btn btn-primary">Check out Brand</a>
+              <a href="news.html" class="btn btn-primary">Check out Brand</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- First Content -->
 
     <!-- Second Content -->
-    <h3 class="my-4 text-center">Seasonal stuff</h3>
+    <h3 class="header my-4 text-center">Seasonal stuff</h3>
     <div class="container text-center">
       <div class="row">
         <!-- Content - Winter News -->
@@ -198,6 +223,7 @@
         </div>
       </div>
     </div>
+    <!-- Second Content -->
 
     <!-- Third Content -->
     <h3 class="my-4 text-center">News at Company & Co</h3>
@@ -227,6 +253,7 @@
         </div>
       </div>
     </div>
+    <!-- Third Content -->
 
     <!-- End Buttons  -->
     <div class="container text-center mt-3">
@@ -385,5 +412,6 @@
         <a class="text-white" href="#">Company & Co</a>
       </div>
     </footer>
+    <!-- Footer -->
   </body>
 </html>

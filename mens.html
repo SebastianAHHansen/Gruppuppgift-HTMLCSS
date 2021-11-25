@@ -32,153 +32,63 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
-
-    <!-- JS -->
-    <link rel="stylesheet" href="app.js" />
-
-    <title>Inlämningsuppgift HTML CSS Bootstrap</title>
+    <title>Mens Jackets - Company & CO</title>
   </head>
 
   <body class="pt-5">
     <!-- Navbar -->
-    <ul class="nav nav-tabs justify-content-center fixed-top">
-      <!-- Navlink Home -->
-      <li class="nav-item">
-        <a class="nav-link bi bi-house" href="index.html"></a>
-      </li>
-      <!-- Navlink News -->
-      <div class="dropdown">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <!-- Logo Brand - Navbar -->
+        <a class="navbar-brand" href="index.html">Company & CO</a>
+        <!-- Collapse Meny - Navbar -->
         <button
-          class="nav-link"
+          class="navbar-toggler"
           type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-        >
-          <b> NEWS</b>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="news.html"><b>All New Jackets</b></a>
-          <li><hr class="dropdown-divider" /></li>
-          <a class="dropdown-item" href="news.html"
-            ><b>Caroline</b> - Corduroy Jacket</a
-          >
-          <a class="dropdown-item" href="news.html"
-            ><b>Filip</b> - Field Jacket</a
-          >
-          <a class="dropdown-item" href="news.html"
-            ><b>Leonard</b> - Leather Jacket</a
-          >
-          <a class="dropdown-item" href="news.html"
-            ><b>Olga</b> - Overshirt Jacket</a
-          >
-        </div>
-      </div>
-      <!-- Navlink Womens -->
-      <div class="dropdown">
-        <button
-          class="nav-link"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-        >
-          <b> WOMENS</b>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="womens.html"
-            ><b>All Jackets Women</b></a
-          >
-          <li><hr class="dropdown-divider" /></li>
-          <a class="dropdown-item" href="womens.html"
-            ><b>Alice</b> - Puffer Jacket</a
-          >
-          <a class="dropdown-item" href="womens.html"
-            ><b>Caroline</b> - Corduruy Jacket</a
-          >
-          <a class="dropdown-item" href="womens.html"
-            ><b>Julia</b> - Puffer Jacket</a
-          >
-          <a class="dropdown-item" href="womens.html"
-            ><b>Olga</b> - Overshirt Jacket</a
-          >
-          <a class="dropdown-item" href="womens.html"
-            ><b>Olivia</b> - Overshirt Jacket</a
-          >
-          <a class="dropdown-item" href="womens.html"
-            ><b>Sarah</b> - Baseball Jacket</a
-          >
-        </div>
-      </div>
-      <!-- Navlink Mens -->
-      <div class="dropdown">
-        <button
-          class="nav-link"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-        >
-          <b> MENS</b>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="mens.html"><b> All Jackets Men</b> </a>
-          <li><hr class="dropdown-divider" /></li>
-          <a class="dropdown-item" href="mens.html"
-            ><b>Allen</b> - Denim Jacket</a
-          >
-          <a class="dropdown-item" href="mens.html"
-            ><b>Bobby</b> - Blazer Jacket</a
-          >
-          <a class="dropdown-item" href="mens.html"
-            ><b>Filip</b> - Field Jacket</a
-          >
-          <a class="dropdown-item" href="mens.html"
-            ><b>Leo</b> - Leather Jacket</a
-          >
-          <a class="dropdown-item" href="mens.html"
-            ><b>Leonard</b> - Leather Jacket</a
-          >
-          <a class="dropdown-item" href="mens.html"
-            ><b>Wincent</b> - Windproof Jacket</a
-          >
-        </div>
-      </div>
-      <!-- Navlink Heart -->
-      <li class="nav-item">
-        <a class="nav-link bi bi-heart" href="#"></a>
-      </li>
-      <!-- Navlink Cart -->
-      <div class="dropdown">
-        <button
-          class="nav-link bi bi-bag"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
+          data-mdb-toggle="collapse"
           aria-expanded="false"
-        ></button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#"
-            >Bobby
-            <img
-              src="jacket1.jpg"
-              alt="Jacka"
-              style="width: 35px; height: 35px"
+        >
+          <!-- Icon Menu -->
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Navlinks -->
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="all.html">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mens.html">Mens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="womens.html">Womens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi bi-bag"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi bi-heart"></a>
+            </li>
+          </ul>
+          <form class="d-flex input-group w-auto">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search Jackets"
+              aria-label="Search"
             />
-          </a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+            <button class="btn" type="button">Search</button>
+          </form>
         </div>
       </div>
-      <!-- Navlink Search -->
-      <li class="nav-item mt-2 mb-2">
-        <div class="search">
-          <input
-            type="text"
-            class="search-hover text-center"
-            placeholder="Search"
-          />
-        </div>
-      </li>
-    </ul>
+    </nav>
+    <!-- Navbar -->
 
     <!-- Company Name -->
     <h1 class="text-center my-3">Company & Co</h1>
@@ -265,16 +175,14 @@
 
     <!-- End Buttons -->
     <div class="container text-center mt-3">
-      <a href="index.html" class="btn btn-primary">Home</a>
       <a href="mens.html" class="btn btn-primary">Back To the Top</a>
-      <a href="all.html" class="btn btn-primary">See All Jackets</a>
     </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-center text-white mt-5">
       <!-- Footer container - Grid -->
       <div class="container p-4">
-        <!-- Section: Social media Links -->
+        <!-- Social media Links -->
         <section class="mb-4">
           <!-- Facebook -->
           <a
@@ -322,9 +230,9 @@
           ></a>
         </section>
 
-        <!-- Email - Section: Form -->
-        <section class="">
-          <form action="">
+        <!-- Email - Submit -->
+        <section class="form">
+          <form action="submit">
             <!--Grid row-->
             <div class="row d-flex justify-content-center">
               <!--Grid column-->
@@ -340,11 +248,11 @@
                 <div class="form-outline form-white mb-4">
                   <input
                     type="email"
-                    id="form5Example21"
+                    id="form"
                     class="form-control"
                     placeholder="Email address"
                   />
-                  <label class="form-label" for="form5Example21"></label>
+                  <label class="form-label" for="form"></label>
                 </div>
               </div>
 
@@ -360,13 +268,11 @@
         </section>
 
         <!-- Section: Links -->
-        <section class="">
-          <!--Grid row-->
+        <section class="links">
           <div class="row">
-            <!--Company & CO - Grid column-->
+            <!-- Company & CO - Grid column-->
             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase">Company & Co</h5>
-
               <ul class="list-unstyled mb-0">
                 <li>
                   <a href="contact.html" class="text-white"
@@ -374,34 +280,31 @@
                   >
                 </li>
                 <li>
-                  <a href="#!" class="text-white">Terms</a>
+                  <a href="contact.html" class="text-white">Terms</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-white">Press</a>
+                  <a href="contact.html" class="text-white">Press</a>
                 </li>
               </ul>
             </div>
-
-            <!--Customer Counselling - Grid column-->
+            <!-- Customer Counselling - Grid column-->
             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase">Customer Counselling</h5>
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="#!" class="text-white">Information</a>
+                  <a href="contact.html" class="text-white">Information</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-white">FAQs</a>
+                  <a href="contact.html" class="text-white">FAQs</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-white">Contact Us</a>
+                  <a href="contact.html" class="text-white">Contact Us</a>
                 </li>
               </ul>
             </div>
-
-            <!--Grid column-->
+            <!-- Company Information - Grid column-->
             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase">Company Information</h5>
-
               <ul class="list-unstyled mb-0">
                 <li>
                   <p>Company & Co</p>
@@ -418,7 +321,6 @@
               </ul>
             </div>
           </div>
-          <!--Grid row-->
         </section>
       </div>
 
@@ -428,8 +330,7 @@
         <a class="text-white" href="#">Company & Co</a>
       </div>
     </footer>
-
-    <!-- Script for Heart button -->
+    <!-- Footer -->
     <script>
       $('#heart').click(function () {
         $(this).toggleClass('bi bi-heart');

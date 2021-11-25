@@ -34,153 +34,68 @@
     <link rel="stylesheet" href="style.css" />
     <!-- JS -->
     <link rel="stylesheet" href="app.js" />
-    <title>Inlämningsuppgift HTML CSS Bootstrap</title>
+    <title>About - Company & CO</title>
 </head>
 <body class="pt-5"></body>
     <!-- Navbar -->
-    <ul class="nav nav-tabs justify-content-center fixed-top">
-        <!-- Navlink Home -->
-        <li class="nav-item">
-          <a class="nav-link bi bi-house" href="index.html"></a>
-        </li>
-        <!-- Navlink News -->
-        <div class="dropdown">
-          <button
-            class="nav-link"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-          >
-            <b> NEWS</b>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="news.html"><b>All New Jackets</b></a>
-            <li><hr class="dropdown-divider" /></li>
-            <a class="dropdown-item" href="news.html"
-              ><b>Caroline</b> - Corduroy Jacket</a
-            >
-            <a class="dropdown-item" href="news.html"
-              ><b>Filip</b> - Field Jacket</a
-            >
-            <a class="dropdown-item" href="news.html"
-              ><b>Leonard</b> - Leather Jacket</a
-            >
-            <a class="dropdown-item" href="news.html"
-              ><b>Olga</b> - Overshirt Jacket</a
-            >
-          </div>
-        </div>
-        <!-- Navlink Womens -->
-        <div class="dropdown">
-          <button
-            class="nav-link"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-          >
-            <b> WOMENS</b>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="womens.html"
-              ><b>All Jackets Women</b></a
-            >
-            <li><hr class="dropdown-divider" /></li>
-            <a class="dropdown-item" href="womens.html"
-              ><b>Alice</b> - Puffer Jacket</a
-            >
-            <a class="dropdown-item" href="womens.html"
-              ><b>Caroline</b> - Corduruy Jacket</a
-            >
-            <a class="dropdown-item" href="womens.html"
-              ><b>Julia</b> - Puffer Jacket</a
-            >
-            <a class="dropdown-item" href="womens.html"
-              ><b>Olga</b> - Overshirt Jacket</a
-            >
-            <a class="dropdown-item" href="womens.html"
-              ><b>Olivia</b> - Overshirt Jacket</a
-            >
-            <a class="dropdown-item" href="womens.html"
-              ><b>Sarah</b> - Baseball Jacket</a
-            >
-          </div>
-        </div>
-        <!-- Navlink Mens -->
-        <div class="dropdown">
-          <button
-            class="nav-link"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-          >
-            <b> MENS</b>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="mens.html"><b> All Jackets Men</b> </a>
-            <li><hr class="dropdown-divider" /></li>
-            <a class="dropdown-item" href="mens.html"
-              ><b>Allen</b> - Denim Jacket</a
-            >
-            <a class="dropdown-item" href="mens.html"
-              ><b>Bobby</b> - Blazer Jacket</a
-            >
-            <a class="dropdown-item" href="mens.html"
-              ><b>Filip</b> - Field Jacket</a
-            >
-            <a class="dropdown-item" href="mens.html"
-              ><b>Leo</b> - Leather Jacket</a
-            >
-            <a class="dropdown-item" href="mens.html"
-              ><b>Leonard</b> - Leather Jacket</a
-            >
-            <a class="dropdown-item" href="mens.html"
-              ><b>Wincent</b> - Windproof Jacket</a
-            >
-          </div>
-        </div>
-        <!-- Navlink Heart -->
-        <li class="nav-item">
-          <a class="nav-link bi bi-heart" href="#"></a>
-        </li>
-        <!-- Navlink Cart -->
-        <div class="dropdown">
-          <button
-            class="nav-link bi bi-bag"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          ></button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#"
-              >Bobby
-              <img
-                src="jacket1.jpg"
-                alt="Jacka"
-                style="width: 35px; height: 35px"
-              />
-            </a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </div>
-        <!-- Navlink Search -->
-        <li class="nav-item mt-2 mb-2">
-          <div class="search">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <!-- Logo Brand - Navbar -->
+        <a class="navbar-brand" href="index.html">Company & CO</a>
+        <!-- Collapse Meny - Navbar -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          aria-expanded="false"
+        >
+          <!-- Icon Menu -->
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Navlinks -->
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="all.html">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mens.html">Mens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="womens.html">Womens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi bi-bag"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi bi-heart"></a>
+            </li>
+          </ul>
+          <form class="d-flex input-group w-auto">
             <input
-              type="text"
-              class="search-hover text-center"
-              placeholder="Search"
+              type="search"
+              class="form-control"
+              placeholder="Search Jackets"
+              aria-label="Search"
             />
-          </div>
-        </li>
-    </ul>
+            <button class="btn" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    
         <!-- Company Name -->
         <h3 class="my-4 text-center">Company & CO</h3>
         <!-- Contact Content -->
-        <div class="container">
-        <div class="row">
+       <div class="container">
+         <div class="row">
             <!-- COMPANY & CO -->
             <div class="col-lg-6">
             <div class="card my-2" style="border-radius: 20px">
@@ -190,19 +105,49 @@
             </div>
             <ul>
                 <strong>About Company & CO</strong> 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, repellat.
+                <p>We are two people with a dream.
+                   Fiften years ago we were determined to give you the best jackets available on the market,
+                  for the cheapest price we can manage. And here we are, for your shopping pleasure.
                 </p>
             </ul>
             <ul>
-                <strong>Terms</strong>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, repellat.
+                <strong>Terms & Conditions</strong>
+                <p><a href="https://www.termsfeed.com/live/e8835ae7-9a52-42e5-9ea0-380b7594c29c">
+                  Click here to read our full terms & conditions </a>
             </ul>
             <ul>
                 <strong>Press</strong>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, repellat.
             </ul>
+
+            
             </div>
+
+            <div class="col-lg-12" >
+              <div class="card my-2" style="border-radius: 20px">
+                <div class="card-body text-center">
+                  <h5 class="card-title">COMPANY INFORMATION</h5>
+                  <hr class="divider">
+                  </div>
+                  <ul>
+                  <strong>Company & CO</strong> 
+                  </ul>
+              <ul>
+                  <strong>VÄSTRA FINNBODAVÄGEN 4</strong> 
+              </ul>
+              <ul>
+                  <strong>131 30 NACKA</strong> 
+              </ul>
+              <ul>
+                  <strong>MAIL:</strong>  INFO@COMPANY.COM
+              </ul>
+              <ul></ul>
+              </div>
+              </div>
             </div>
+
+
+            
             <!-- CUSTOMER COUNSELLING -->
             <div class="col-lg-6">
             <div class="card my-2" style="border-radius: 20px">
@@ -212,197 +157,199 @@
               </div>
               <ul>
                 <strong>Information</strong> 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, repellat.
+                <p>All brands listed have been vetted to be cruelty-free, 
+                  meaning that no animal testing is being performed on either finished products or ingredients at any point during production and beyond. 
+                  Our criteria is the Cruelty-Free 5, meaning:
+
+                  <ul>
+                    <li> Our company doesn’t test finished products or ingredients on animals. </li>
+                    <li> Our suppliers don’t test finished products or ingredients on animals. </li>
+                    
                 </p>
             </ul>
-            <ul>
+            
+            
                 <strong>FAQ</strong>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, repellat.
+                <ul>
+                  <li><strong>Who are we?</strong>
+                    <li> We are two people determined to give you the best jackets available on the market,
+                       for the cheapest price we can manage. </li> <br>
+
+                  <li><strong>My jacket is not the correct size. Can I return it?</strong>
+                    <li>As long as the product in question has not been damaged in any way, shape, or form,
+                           we offer all customers a 14-day guarantee to change sizes &
+                            color on the jacket completely free. </li> <br>
+
+                  <li><strong>How long does it take for my jacket to arrive?</strong> </li>
+                    <li>Your jacket should arrive in 3 days 
+                  </li>
+
+                </ul>
             </ul>
             <ul>
                 <strong>Contact Us</strong>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, repellat.
+                <p>You can reach us at <a href="mailto:companyco@hotmail.com">companyco@hotmail.com</a> if there's any criticism of our products. 
+                  If you are not satisfied, you will get all of your money back.
             </ul>
             </div>
             </div>
-            <!-- COMPANY INFORMATION -->
-            <div class="col-lg-6">
-            <div class="card my-2" style="border-radius: 20px">
-              <div class="card-body text-center">
-                <h5 class="card-title">COMPANY INFORMATION</h5>
-                <hr class="divider">
-                </div>
-                <ul>
-                <strong>Company & CO</strong> 
-                </ul>
-            <ul>
-                <strong>VÄSTRA FINNBODAVÄGEN 4</strong> 
-            </ul>
-            <ul>
-                <strong>131 30 NACKA</strong> 
-            </ul>
-            <ul>
-                <strong>MAIL:</strong>  INFO@COMPANY.COM
-            </ul>
-            </div>
-            </div>
+          </div>
         </div>
-        </div>
+
+        
+      
     <!-- Footer -->
     <footer class="bg-dark text-center text-white mt-5">
-        <!-- Footer container - Grid -->
-        <div class="container p-4">
-          <!-- Section: Social media Links -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a
-              class="btn btn-outline-light btn-floating m-1"
-              href="https://facebook.com"
-              target="_blank"
-              role="button"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <!-- Twitter -->
-            <a
-              class="btn btn-outline-light btn-floating m-1"
-              href="https://twitter.com"
-              target="_blank"
-              role="button"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <!-- Google -->
-            <a
-              class="btn btn-outline-light btn-floating m-1"
-              href="https://google.com"
-              target="_blank"
-              role="button"
-              ><i class="fab fa-google"></i
-            ></a>
-            <!-- Instagram -->
-            <a
-              class="btn btn-outline-light btn-floating m-1"
-              href="https://instagram.com"
-              target="_blank"
-              role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <!-- Linkedin -->
-            <a
-              class="btn btn-outline-light btn-floating m-1"
-              href="https://linkedin.com"
-              target="_blank"
-              role="button"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </section>
-  
-          <!-- Email - Section: Form -->
-          <section class="">
-            <form action="submit">
-              <!--Grid row-->
-              <div class="row d-flex justify-content-center">
-                <!--Grid column-->
-                <div class="col-auto">
-                  <p class="pt-2">
-                    <strong>Sign up for our newsletter</strong>
-                  </p>
-                </div>
-  
-                <!--Email - Grid column-->
-                <div class="col-md-5 col-12">
-                  <!-- Email input -->
-                  <div class="form-outline form-white mb-4">
-                    <input
-                      type="email"
-                      id="form"
-                      class="form-control"
-                      placeholder="Email address"
-                    />
-                    <label class="form-label" for="form"></label>
-                  </div>
-                </div>
-  
-                <!--Submit - Grid column-->
-                <div class="col-auto">
-                  <!-- Submit button -->
-                  <button type="submit" class="btn btn-outline-light mb-4">
-                    Subscribe
-                  </button>
-                </div>
-              </div>
-            </form>
-          </section>
-  
-          <!-- Section: Links -->
-          <section class="">
+      <!-- Footer container - Grid -->
+      <div class="container p-4">
+        <!-- Social media Links -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://facebook.com"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://twitter.com"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://google.com"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://instagram.com"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://linkedin.com"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </section>
+
+        <!-- Email - Submit -->
+        <section class="form">
+          <form action="submit">
             <!--Grid row-->
-            <div class="row">
-              <!--Company & CO - Grid column-->
-              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Company & Co</h5>
-  
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#!" class="text-white">About Company & Co</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">Terms</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">Press</a>
-                  </li>
-                </ul>
-              </div>
-  
-              <!--Customer Counselling - Grid column-->
-              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Customer Counselling</h5>
-  
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#!" class="text-white">Information</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">FAQs</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-white">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-  
+            <div class="row d-flex justify-content-center">
               <!--Grid column-->
-              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Company Information</h5>
-  
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <p>Company & Co</p>
-                  </li>
-                  <li>
-                    <p>Västra Finnbodavägen 4</p>
-                  </li>
-                  <li>
-                    <p>131 30 Nacka</p>
-                  </li>
-                  <li>
-                    <p>Mail: info@company.com</p>
-                  </li>
-                </ul>
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
               </div>
-              <!--Grid column-->
-  
-              <!--Grid column-->
+
+              <!--Email - Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id="form"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                  <label class="form-label" for="form"></label>
+                </div>
+              </div>
+
+              <!--Submit - Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
             </div>
-            <!--Grid row-->
-          </section>
-        </div>
-  
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-          © 2021 Copyright:
-          <a class="text-white" href="#">Company & Co</a>
-        </div>
+          </form>
+        </section>
+
+        <!-- Section: Links -->
+        <section class="links">
+          <div class="row">
+            <!-- Company & CO - Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Company & Co</h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="contact.html" class="text-white"
+                    >About Company & Co</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html" class="text-white">Terms</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="text-white">Press</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Customer Counselling - Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Customer Counselling</h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="contact.html" class="text-white">Information</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="text-white">FAQs</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="text-white">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Company Information - Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Company Information</h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <p>Company & Co</p>
+                </li>
+                <li>
+                  <p>Västra Finnbodavägen 4</p>
+                </li>
+                <li>
+                  <p>131 30 Nacka</p>
+                </li>
+                <li>
+                  <p>Mail: info@company.com</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div> 
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-white" href="#">Company & Co</a>
+      </div>
     </footer>
+    <!-- Footer -->
 </body>
 </html>
