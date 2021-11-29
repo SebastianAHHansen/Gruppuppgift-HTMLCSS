@@ -58,10 +58,6 @@ let allJackets = [
         "fabric":"100% Vegan Leather",
         "gender":"men"
     },
-   
-
-
-
 ];
 
 //Search function 
@@ -89,7 +85,7 @@ const displayJackets=(jackets) => {
             <h3 class="mt-2">${jacket.jacketName}</h3>
             <h5 class="mt-1">${jacket.price}</h5>
             <p class="card-text">${jacket.fabric}</p>
-            <a href="#" class="btn bi bi-heart"></a>
+            <a class="btn bi bi-heart"></a>
             <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
@@ -99,4 +95,4 @@ const displayJackets=(jackets) => {
         jacketsList.innerHTML = htmlString;
 };
 //Loads all jackets
-displayJackets(allJackets);
+displayJackets(allJackets); 

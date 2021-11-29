@@ -3,8 +3,7 @@ const listJackets = document.getElementById('jacketsList');
 const searchBar = document.getElementById('searchBar');
 //array with all the jackets
 let allJackets = [
-
-   
+  
     {
         "image": "img/wjacket8.jpg",
         "img_alt":"Overshirt Jacket",
@@ -41,7 +40,6 @@ let allJackets = [
         "fabric":"100% Corduroy",
         "gender":"woman"
     },
-
 ];
 
 //Search function 
@@ -69,7 +67,7 @@ const displayJackets=(jackets) => {
             <h3 class="mt-2">${jacket.jacketName}</h3>
             <h5 class="mt-1">${jacket.price}</h5>
             <p class="card-text">${jacket.fabric}</p>
-            <a href="#" class="btn bi bi-heart"></a>
+            <a class="btn bi bi-heart"></a>
             <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>

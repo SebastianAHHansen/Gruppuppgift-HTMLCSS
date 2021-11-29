@@ -10,18 +10,7 @@
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     />
 
-    <!-- Bootstrap JS-->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -30,29 +19,47 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
     />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- JS -->
-    <link rel="stylesheet" href="app.js" />
-
-    <title>Mens Jackets - Company & CO</title>
+    <title>All Jackets - Company & CO</title>
   </head>
   <body class="pt-5">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
+        <!-- Logo Brand - Navbar -->
         <a class="navbar-brand" href="index.html">Company & CO</a>
+        <!-- Collapse Meny - Navbar -->
         <button
           class="navbar-toggler"
           type="button"
-          data-mdb-toggle="collapse"
+          data-toggle="collapse"
+          data-target="#toggleMobileMenu"
+          aria-controls="toggleMobileMenu"
           aria-expanded="false"
+          aria-label="Toggle navigation"
         >
+          <!-- Icon Menu -->
           <i class="fas fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Navlinks -->
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
             <li class="nav-item">
               <a class="nav-link" href="news.html">News</a>
             </li>
@@ -78,6 +85,8 @@
           <form class="d-flex input-group w-auto">
             <input
               type="search"
+              name="searchBar"
+              id="searchBar"
               class="form-control"
               placeholder="Search Jackets"
               aria-label="Search"
@@ -91,11 +100,11 @@
 
     <!-- Company Name -->
     <h1 class="text-center my-3">Company & Co</h1>
-    <h3 class="my-4 text-center">All Our Jackets</h3>
 
-    <!-- Content - Women -->
+    <!-- Content - All -->
+    <h3 class="my-4 text-center">All Our Jackets</h3>
     <div class="container text-center">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" id="jacketsList">
         <div class="card lg-3 my-3 mx-3" style="width: 18rem">
           <img
             class="card-img-top"
@@ -107,7 +116,7 @@
             <h3 class="mt-2">Black Puffer Jacket</h3>
             <h5 class="mt-1">$79</h5>
             <p class="card-text">100% Recycled</p>
-            <a href="#" class="btn bi bi-heart"></a>
+            <a class="btn bi bi-heart"></a>
             <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
@@ -118,7 +127,7 @@
             <h3 class="mt-2">Overshirt Jacket</h3>
             <h5 class="mt-1">$49</h5>
             <p class="card-text">100% Denim</p>
-            <a href="#" class="btn bi bi-heart"></a>
+            <a class="btn bi bi-heart"></a>
             <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
@@ -129,7 +138,7 @@
             <h3 class="mt-2">Puffer Jacket</h3>
             <h5 class="mt-1">$69</h5>
             <p class="card-text">100% Cotton</p>
-            <a href="#" class="btn bi bi-heart"></a>
+            <a class="btn bi bi-heart"></a>
             <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
@@ -139,58 +148,52 @@
             <h5 class="mt-2">Sarah</h5>
             <h3 class="mt-2">Baseball Jacket</h3>
             <h5 class="mt-1">$59</h5>
-            <p class="card-text">100% Vegan Leather</p>
-            <a href="#" class="btn bi bi-heart"></a>
+            <p class="card-text">100% Cotton</p>
+            <a class="btn bi bi-heart"></a>
             <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Content - Mens -->
-    <div class="container text-center">
-      <div class="row justify-content-center">
         <div class="card lg-3 my-3 mx-3" style="width: 18rem">
           <img class="card-img-top" src="jacket.jpg" alt="Denim Jacket" />
           <div class="card-body">
-            <h5 class="mt-1">Allen</h5>
+            <h5 class="mt-2">Allen</h5>
             <h3 class="mt-2">Denim Jacket</h3>
             <h5 class="mt-1">$59</h5>
             <p class="card-text">100% Denim</p>
-            <a href="#" class="btn bi bi-heart"></a>
+            <a class="btn bi bi-heart"></a>
             <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
         <div class="card lg-3 my-3 mx-3" style="width: 18rem">
           <img class="card-img-top" src="jacket1.jpg" alt="Blazer Jacket" />
           <div class="card-body">
-            <h5 class="mt-1">Bobby</h5>
+            <h5 class="mt-2">Bobby</h5>
             <h3 class="mt-2">Blazer Jacket</h3>
             <h5 class="mt-1">$79</h5>
             <p class="card-text">100% Cotton</p>
-            <a href="#" class="btn bi bi-heart"></a>
+            <a class="btn bi bi-heart"></a>
             <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
         <div class="card lg-3 my-3 mx-3" style="width: 18rem">
           <img class="card-img-top" src="jacket3.jpg" alt="Windproof Jacket" />
           <div class="card-body">
-            <h5 class="mt-1">Wincent</h5>
+            <h5 class="mt-2">Wincent</h5>
             <h3 class="mt-2">Windproof Jacket</h3>
             <h5 class="mt-1">$79</h5>
             <p class="card-text">100% Cotton</p>
-            <a href="#" class="btn bi bi-heart"></a>
+            <a class="btn bi bi-heart"></a>
             <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
         <div class="card lg-3 my-3 mx-3" style="width: 18rem">
           <img class="card-img-top" src="jacket4.jpg" alt="Leather Jacket" />
           <div class="card-body">
-            <h5 class="mt-1">Leo</h5>
+            <h5 class="mt-2">Leo</h5>
             <h3 class="mt-2">Leather Jacket</h3>
-            <h5 class="mt-1">$99</h5>
+            <h5 class="mt-1">$89</h5>
             <p class="card-text">100% Cotton</p>
-            <a href="#" class="btn bi bi-heart"></a>
+            <a class="btn bi bi-heart"></a>
             <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
@@ -199,7 +202,7 @@
 
     <!-- Content - News -->
     <div class="container text-center">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" id="jacketsList">
         <div class="card lg-3 my-3 mx-3" style="width: 18rem">
           <img class="card-img-top" src="wjacket8.jpg" alt="Overshirt Jacket" />
           <div class="card-body">
@@ -207,7 +210,7 @@
             <h3 class="mt-2">Overshirt Jacket</h3>
             <h5 class="mt-1">$69</h5>
             <p class="card-text">100% Recycled</p>
-            <a href="#" class="btn bi bi-heart"></a>
+            <a class="btn bi bi-heart"></a>
             <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
@@ -218,7 +221,7 @@
             <h3 class="mt-2">Field Jacket</h3>
             <h5 class="mt-1">$79</h5>
             <p class="card-text">100% Recycled</p>
-            <a href="#" class="btn bi bi-heart"></a>
+            <a class="btn bi bi-heart"></a>
             <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
@@ -229,7 +232,7 @@
             <h3 class="mt-2">Leather Jacket</h3>
             <h5 class="mt-1">$99</h5>
             <p class="card-text">100% Vegan Leather</p>
-            <a href="#" class="btn bi bi-heart"></a>
+            <a class="btn bi bi-heart"></a>
             <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
@@ -240,14 +243,14 @@
             <h3 class="mt-2">Corduroy Jacket</h3>
             <h5 class="mt-1">$69</h5>
             <p class="card-text">100% Corduroy</p>
-            <a href="#" class="btn bi bi-heart"></a>
+            <a class="btn bi bi-heart"></a>
             <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- End Buttons  -->
+    <!-- End Buttons -->
     <div class="container text-center mt-3">
       <a href="all.html" class="btn btn-primary">Back To the Top</a>
     </div>
@@ -312,7 +315,7 @@
               <!--Grid column-->
               <div class="col-auto">
                 <p class="pt-2">
-                  <strong>SIGN UP FOR OUT NEWSLETTER</strong>
+                  <strong>Sign up for our newsletter</strong>
                 </p>
               </div>
 
@@ -405,5 +408,6 @@
       </div>
     </footer>
     <!-- Footer -->
+    <script src="appall.js"></script>
   </body>
 </html>
