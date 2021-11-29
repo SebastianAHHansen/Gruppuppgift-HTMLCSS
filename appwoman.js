@@ -47,7 +47,7 @@ let allJackets = [
         "jacketName":"Overshirt Jacket",
         "price": "$69",
         "fabric":"100% Recycled",
-        "gender":"women"
+        "gender":"woman"
     },     
     {
         "image": "img/wjacket10.jpg",
